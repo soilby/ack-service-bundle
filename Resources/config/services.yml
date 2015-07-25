@@ -1,0 +1,6 @@
+services:
+    soil_ack_service.service.ack:
+        class: Soil\AckService\Service\Ack
+        arguments: [@doctrine.odm.mongodb.document_manager]
+        calls:
+        tags:
